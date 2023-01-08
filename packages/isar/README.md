@@ -1,3 +1,52 @@
+# PREAMBLE
+
+This repository is not the official Isar repository. You can find it here: https://github.com/isar/isar.
+
+It is a temporary fork, based on [version 2.5.0](https://pub.dev/packages/isar/versions/2.5.0), but with updated dependencies - https://github.com/isar/isar/tree/2.5.0.
+
+Originally Isar supported Flutter Web, but the upgrade to version ^3.0.0 broke that feature - https://github.com/isar/isar/issues/686.
+
+As soon as Isar's author publishes an update for ^3.0.0 that restores support for Flutter Web, this fork will be discontinued and you will be encouraged to upgrade to that version and use the official packages from pub.dev - https://pub.dev/packages/isar.
+
+This fork will not see any new features, bug fixes, or any other kind of improvement, except the minimum required to keep its dependencies up to date.
+
+Here's what you need to add to pubspec.yaml to introduce it as a dependency:
+
+```yaml
+
+# this is required to be able
+# to use git dependencies
+publish_to: 'none'
+
+dependencies:
+  isar:
+    git:
+      url: https://github.com/squarealfa/isar25.git
+      path: packages/isar
+
+  # for flutter:
+  isar_flutter_libs:
+    git:
+      url: https://github.com/squarealfa/isar25.git
+      path: packages/isar_flutter_libs
+
+dev_dependencies:
+  isar_generator:
+    git:
+      url: https://github.com/squarealfa/isar25.git
+      path: packages/isar_generator
+```
+
+I created this fork for my convenience and I made it public so anyone can use it. However, I do not have the competence on this package to perform maintenance tasks that exceed keeping dependencies up to date. So, the only issues I will not outright reject here are the following:
+- Out of date dependencies that are conflicting with your other dependencies.
+- Improvements based on ^2.5.0 pushed to the official repository you want merged here.
+
+The remainder of this README is left untouched from 2.5.0, just as every other bit of documentation.
+
+Rui Craveiro
+
+## README
+
 <p align="center">
   <a href="https://isar.dev">
     <img src="https://raw.githubusercontent.com/isar/isar/main/.github/assets/isar.svg?sanitize=true" height="128">

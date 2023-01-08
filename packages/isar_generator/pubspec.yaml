@@ -7,15 +7,20 @@ homepage: https://isar.dev
 environment:
   sdk: ">=2.16.0 <3.0.0"
 
+publish_to: none
+
 dependencies:
-  isar: 2.5.0
+  isar:
+    git: 
+      url: https://github.com/squarealfa/isar25.git
+      path: packages/isar
   build: ^2.2.1
   source_gen: ^1.2.1
-  analyzer: ^3.0.0
+  analyzer: ^5.0.0
   glob: ^2.0.2
   path: ^1.8.0
   dart_style: ^2.2.1
   dartx: ^1.0.0
 
 dev_dependencies:
-  lints: ^1.0.1
+  lints: ^2.0.1
