@@ -21,19 +21,19 @@ publish_to: 'none'
 dependencies:
   isar:
     git:
-      url: https://github.com/squarealfa/isar25.git
+      url: https://github.com/Giuspepe/isar-2.5.0
       path: packages/isar
 
   # for flutter:
   isar_flutter_libs:
     git:
-      url: https://github.com/squarealfa/isar25.git
+      url: https://github.com/Giuspepe/isar-2.5.0
       path: packages/isar_flutter_libs
 
 dev_dependencies:
   isar_generator:
     git:
-      url: https://github.com/squarealfa/isar25.git
+      url: https://github.com/Giuspepe/isar-2.5.0
       path: packages/isar_generator
 ```
 
