@@ -25,16 +25,19 @@ dependencies:
       path: packages/isar
 
   # for flutter:
-  isar_flutter_libs:
-    git:
-      url: https://github.com/Giuspepe/isar-2.5.0
-      path: packages/isar_flutter_libs
+  isar_flutter_libs: 2.5.0
 
 dev_dependencies:
   isar_generator:
     git:
       url: https://github.com/Giuspepe/isar-2.5.0
       path: packages/isar_generator
+
+dependency_overrides:
+  isar:
+    git:
+      url: https://github.com/Giuspepe/isar-2.5.0
+      path: packages/isar
 ```
 
 I created this fork for my convenience and I made it public so anyone can use it. However, I do not have the competence on this package to perform maintenance tasks that exceed keeping dependencies up to date. So, the only issues I will not outright reject here are the following:

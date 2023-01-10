@@ -30,8 +30,7 @@ dev_dependencies:
 dependency_overrides:
   isar:
     path: ../isar
-  isar_flutter_libs:
-    path: ../isar_flutter_libs
+  isar_flutter_libs: 2.5.0
   isar_generator:
     path: ../isar_generator
   test_api: ^0.4.9
